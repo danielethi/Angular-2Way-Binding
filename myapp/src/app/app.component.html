@@ -1,0 +1,22 @@
+
+<h1>Two Way Binding</h1>
+<!-- steps:import FromsModule app.ts declare data use [(ngModuel)="data"] them {{}} -->
+<div>
+  <textarea
+    name=""
+    id=""
+    cols="30"
+    rows="10"
+    [value]="newPost"
+    [(ngModel)]="enteredValue"
+  ></textarea
+  ><br />
+</div>
+
+<button (click)="onAddPost()">Save Post</button>
+{{ newPost }}
+
+<hr>
+<!-- orsimply -->
+<input type="text" [(ngModel)]="data">
+{{data}}
